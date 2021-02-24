@@ -205,10 +205,21 @@ let addPost = {
         ],
         "parameters": [
             {
-                "in": "body",
-                "name": "body",
+                "in": "path",
+                "name": "title",
                 "description": "This can add a post",
                 "required": true,
+                // "format": "string",
+                "schema": {
+                    "$ref": "#/definitions/Posts"
+                }
+            },
+            {
+                "in": "path",
+                "name": "description",
+                "description": "This can add a post",
+                "required": true,
+                // "format": "string",
                 "schema": {
                     "$ref": "#/definitions/Posts"
                 }
