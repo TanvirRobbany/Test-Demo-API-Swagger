@@ -207,9 +207,9 @@ let addPost = {
             {
                 "in": "path",
                 "name": "title",
-                "description": "This can add a post",
+                "description": "Add your title here",
                 "required": true,
-                // "format": "string",
+                "format": "string",
                 "schema": {
                     "$ref": "#/definitions/Posts"
                 }
@@ -217,9 +217,9 @@ let addPost = {
             {
                 "in": "path",
                 "name": "description",
-                "description": "This can add a post",
+                "description": "Add your description here",
                 "required": true,
-                // "format": "string",
+                "format": "string",
                 "schema": {
                     "$ref": "#/definitions/Posts"
                 }
